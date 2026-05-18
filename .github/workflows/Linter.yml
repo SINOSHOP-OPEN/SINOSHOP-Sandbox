@@ -1,0 +1,22 @@
+name: R18 Linter
+
+on:
+  pull_request:
+    paths:
+      - 'src/r18/**'
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Setup Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
+    
+    - name: Run R18 linter
+      run: |
+        python scripts/r18-linter.py src/r18/
