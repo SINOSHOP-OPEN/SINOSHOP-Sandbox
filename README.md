@@ -6,6 +6,10 @@
 
 ---
 
+> 🔗 **SINOSHOP 生态导航**：[sinoshop-os 母体平台](https://gitee.com/sinoshop/sinoshop-os) · [思维范式接口](https://gitee.com/sinoshop/SINOSHOP-Sandbox/tree/master/api/R21A-MIND) · [产品手册](https://gitee.com/sinoshop/SINOSHOP-Sandbox/tree/master/products) · [入门任务](https://gitee.com/sinoshop/SINOSHOP-Sandbox/issues)
+
+---
+
 ## 📐 任务背景
 
 SINOSHOP 海上交通枢纽（海天观星台）总长 **3600米**，宽 **1188米**。南北两端各延伸 **300米** “海上都江堰”消浪抬升平台，中心 **282米** 为全露天观星台主体区。
