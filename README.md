@@ -6,8 +6,10 @@
 
 ---
 
-> 🔗 **SINOSHOP 生态导航**：- 📖 [《山海补天》第一章：台风混沌压境](./story/chapter-01.md) — 开源工程硬核科幻，文丘里空化悬赏已上线 [#IJSH0I](https://gitee.com/sinoshop/SINOSHOP-Sandbox/issues/IJSH0I)
+> 🔗 **SINOSHOP 生态导航**：- 
+📖 [《山海补天》第一章：台风混沌压境](./story/chapter-01.md) — 开源工程硬核科幻，文丘里空化悬赏已上线 [#IJSH0I](https://gitee.com/sinoshop/SINOSHOP-Sandbox/issues/IJSH0I)
 [sinoshop-os 母体平台](https://gitee.com/sinoshop/sinoshop-os) · [思维范式接口](https://gitee.com/sinoshop/SINOSHOP-Sandbox/tree/master/api/R21A-MIND) · [产品手册](https://gitee.com/sinoshop/SINOSHOP-Sandbox/tree/master/products) · [入门任务](https://gitee.com/sinoshop/SINOSHOP-Sandbox/issues)
+
 
 ---
 
