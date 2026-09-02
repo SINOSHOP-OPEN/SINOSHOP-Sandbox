@@ -1,92 +1,131 @@
-# 🏆 CHALLENGE-010：驭风者 · 全向气旋三维拓扑气动抬升算法
+# 🏆 CHALLENGE-010: Windrider · Omnidirectional Cyclone 3D Topological Aerodynamic Lift Algorithm
 
-> **USS v2.2.3d · 终极防卫版**
-> 
-> 观天之道，执天之行，造福人民。
+**USS v2.2.3d · Ultimate Defense Edition**
 
----
-🔗 SINOSHOP 生态导航：[sinoshop-os 母体平台](https://gitee.com/sinoshop/sinoshop-os) · [思维范式接口](https://gitee.com/sinoshop/SINOSHOP-Sandbox/tree/main/api/R21A-MIND) · [产品手册](https://gitee.com/sinoshop/SINOSHOP-Sandbox/tree/main/products) · [入门任务](https://gitee.com/sinoshop/SINOSHOP-Sandbox/issues)
-
-📖 [《山海补天》第一章：台风混沌压境](./story/chapter-01.md) — 开源工程硬核科幻，文丘里空化悬赏已上线 [#IJSH0I](https://gitee.com/sinoshop/SINOSHOP-Sandbox/issues/IJSH0I)
+> *Observe Nature's Order, Align with Ocean's Rhythm, Benefit All People.*
 
 ---
 
-## 📐 任务背景
+🔗 **SINOSHOP Ecosystem Navigation**: [sinoshop-os Mother Platform](https://gitee.com/sinoshop/sinoshop-os) · [Paradigm Interface](https://gitee.com/sinoshop/sinoshop-os) · [Product Catalog](https://gitee.com/sinoshop/SINOSHOP-Sandbox/products) · [Getting Started Tasks](https://gitee.com/sinoshop/SINOSHOP-Sandbox)
 
-SINOSHOP 海上交通枢纽（海天观星台）总长 **3600米**，宽 **1188米**。南北两端各延伸 **300米** “海上都江堰”消浪抬升平台，中心 **282米** 为全露天观星台主体区。
-
-当 18 级超强台风正面来袭时，如何确保中心观星台上方形成绝对稳定的相对静风区——这是本挑战的核心命题。
+📖 **"Mending the Sky" Chapter 1: Typhoon Chaos Approaches** — Open-source hard sci-fi engineering, Venturi cavitation bounty now live #IJSH0I
 
 ---
 
-## 🎯 任务目标
+## 📐 Mission Background
 
-针对两端 **300米** 陡坡抬升平台及九纵整体外壳进行**多场耦合全向气旋仿真**。
+The SINOSHOP Maritime Transportation Hub (Sea-Sky Observatory) spans **3600 meters** in length and **1188 meters** in width. At both the north and south ends, **300-meter** "Oceanic Dujiangyan" wave-dissipating lift platforms extend outward, with a **282-meter** fully open-air observatory core zone at the center.
 
-解算 18 级超强台风在 **360°全向动态旋转切变**工况下，气流贴壁剥离形成的附面层高空抛物线。
-
----
-
-## 🔴 核心指标（不可商榷）
-
-| 指标 | 要求 |
-|---|---|
-| 风速 | v∞ ≥ **65 m/s**（18级超强台风） |
-| 风向 | **360°全向动态旋转切变**，旋转周期覆盖 1h-6h |
-| 物理机制 | 禁止启用外部电能泵组强排水，仅依赖几何被动消能 |
-| 风速衰减 | ≥ **75%** |
-| 中心静风区 | 282m 观星台上方形成**绝对三维稳定的相对静风剪切涡流底层** |
-| 高频余差 | PID 系统仅调谐 < **300μm** 微震 |
+**Core Challenge**: When a Category 5 super typhoon strikes head-on, how can we ensure the formation of an absolutely stable relative calm-air zone above the central observatory?
 
 ---
 
-## 🧩 物理模型约束
+## 🎯 Mission Objective
 
-必须协同以下几何体完成全局气动解算：
+Perform multi-field coupled omnidirectional cyclone simulation on the following:
 
-1. **南北两端 300m “海上鱼嘴”** — 初始抬升效应
-2. **第三纵 & 第七纵扁椭圆光伏护罩** — 几何曲率协同
-3. **第一纵 & 第九纵生态种植红树林** — 活体阻尼系数动态退化边缘条件
-4. **九纵整体外壳** — 附面层剥离全程路径
+- The 300-meter steep-slope lift platforms at both ends
+- The nine-longitudinal overall shell structure
 
----
-
-## ⚙️ 并发黑天鹅工况（TRL5 门禁）
-
-方案必须通过以下极端并发破坏性测试：
-
-- 18m 最大波高斜向拍击
-- 50% 虚拟锚锤（VIR）故障中断
-- 9m 隔离水道公交船电磁换乘短路
-- 数据中心热管理回路突发空化
-- **红树林活体阻尼系数动态退化**
-
-**通过红线：** 最大瞬时倾斜角 ≤ **3°**，主权哈希存证链数据完整性 **100%**。
+**Key Calculation**: Resolve the boundary-layer high-altitude parabolic trajectory formed by airflow wall-attachment separation under **360° omnidirectional dynamic rotating shear** conditions of a Category 5 super typhoon.
 
 ---
 
-## 🏅 知识回馈
+## 🔴 Core Metrics (Non-Negotiable)
 
-通过 TRL5 门禁的方案将获得：
+| Metric | Requirement |
+| :--- | :--- |
+| Wind Speed | v∞ ≥ 65 m/s (Category 5 super typhoon) |
+| Wind Direction | 360° omnidirectional dynamic rotating shear, rotation period covering 1h–6h |
+| Physical Mechanism | **No external electric pump drainage** — geometry-based passive energy dissipation only |
+| Wind Speed Attenuation | ≥ 75% |
+| Central Calm Zone | Formation of an absolutely 3D-stable relative calm-air shear vortex bottom layer above the 282m observatory |
+| High-Frequency Residual | PID system only fine-tunes < 300μm micro-vibrations |
 
-- 全球唯一 **STI 身份标识编码**
-- **SHA-3-256 主权哈希永久数字存证**
-- **Sino-Fuel 生态权益反哺**：
-  - 深海算力免费分配额度（依据 PoK 贡献权重比例）
-  - IMTA 绿色高档海产的数字化提货权
-  - 全球绿色氢能加注的优先结算折扣
+---
+
+## 🧩 Physical Model Constraints
+
+The global aerodynamic solution must synergistically integrate the following geometries:
+
+| Geometry | Function |
+| :--- | :--- |
+| **North & South 300m "Oceanic Fish Mouth"** | Initial lift effect |
+| **3rd & 7th Longitudinal Flat Elliptical PV Shields** | Geometric curvature synergy |
+| **1st & 9th Longitudinal Ecological Mangrove Belts** | Live damping coefficient dynamic degradation edge conditions |
+| **Nine-Longitudinal Overall Shell** | Full boundary-layer separation path |
 
 ---
 
-## 📥 提交指引
+## ⚙️ Concurrent Black Swan Scenarios (TRL5 Gate)
 
-**主仓库：** https://github.com/SINOSHOP-OPEN/SINOSHOP-Platform
+Proposed solutions must pass the following extreme concurrent destructive tests:
 
-**沙盒仿真平台：** [SINOSHOP-Sandbox](https://github.com/SINOSHOP-OPEN/SINOSHOP-Sandbox) — 请在沙盒中完成仿真验证后，将结果提交至本挑战入口。
+| Test Scenario | Description |
+| :--- | :--- |
+| **18m Maximum Wave Height** | Oblique impact |
+| **50% Virtual Anchor Hammer (VIR) Failure** | Interruption |
+| **9m Isolation Waterway Ferry EM Short Circuit** | Transit system failure |
+| **Data Center Thermal Management Loop** | Sudden cavitation |
+| **Mangrove Live Damping Coefficient** | Dynamic degradation |
 
-**技术规范：** 参见 `/docs/` 目录下的 USS v2.2.3d 完整战略文件
+**Passing Red Line**: Maximum instantaneous tilt angle ≤ 3°, Sovereign Hash Chain data integrity 100%.
 
 ---
+
+## 🏅 Knowledge Rewards
+
+Solutions that pass the TRL5 gate will receive:
+
+| Reward | Description |
+| :--- | :--- |
+| **Global Unique STI Identifier** | Permanent digital identity code |
+| **SHA-3-256 Sovereign Hash** | Permanent digital proof of contribution |
+| **Sino-Fuel Ecosystem Benefits** | — |
+| — Deep-sea compute free allocation (PoK weight-based) | — |
+| — IMTA premium marine product digital delivery rights | — |
+| — Priority settlement discounts for global green hydrogen refueling | — |
+
+---
+
+## 📥 Submission Guidelines
+
+| Item | Link/Description |
+| :--- | :--- |
+| **Main Repository** | [https://github.com/SINOSHOP-OPEN/SINOSHOP-Platform](https://github.com/SINOSHOP-OPEN/SINOSHOP-Platform) |
+| **Sandbox Simulation Platform** | [SINOSHOP-Sandbox](https://github.com/SINOSHOP-OPEN/SINOSHOP-Sandbox) — Complete simulation verification in the sandbox, then submit results to this challenge entry |
+| **Technical Specifications** | See USS v2.2.3d complete strategic documents in `/docs/` directory |
+
+---
+
+> *Benefiting others is the best way to benefit oneself.*
+
+---
+
+## 📬 Contact & Community
+
+🌊 **SINOSHOP** — Self-sustaining Intelligent Networked Oceanic Stable Habitat Operating Platform
+
+Based on Submerged Floating Tunnel (SFT) core technology, building a self-floating, intelligent, networked marine city operating platform.
+
+- 🏠 **Project Homepage**: [https://sinoshop-open.github.io/webpage/](https://sinoshop-open.github.io/webpage/)
+- 📂 **Open Source Repository**: [https://gitee.com/sinoshop/sinoshop-os](https://gitee.com/sinoshop/sinoshop-os)
+- 🌐 **GitHub International Mirror**: [SINOSHOP-OPEN](https://github.com/SINOSHOP-OPEN)
+- 📧 **Contact Email**: standards@sinoshop.org
+
+---
+
+> 🌊 *Observe Nature's Order, Align with Ocean's Rhythm, Benefit All People.*  
+> 🌊 *Sea Generates Power → Power Sustains Ships → Ships Bridge Cities → Cities Benefit People → Aerospace for All → Harmony for All Beings.*  
+> ✨ *Loyalty shines through ages; benevolence spreads across seasons.*
+
+---
+
+🇨🇳 **中文版本**: [在 Gitee 上查看](https://gitee.com/sinoshop/SINOSHOP-Sandbox)
+
+---
+
+*Last Updated: 2026-09-02 | SINOSHOP-Sandbox v1.0*
 
 > **利众是最佳方式的自利。**
 > 
