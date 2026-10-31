@@ -2,7 +2,7 @@
 
 感谢您对本项目的关注。SINOSHOP-R21A 遵循“善乐生”工程哲学——工程向善、乐业创造、生生不息。
 
-> 🔗 **SINOSHOP 生态导航**：[SINOSHOP-Sandbox](https://gitee.com/sinoshop/SINOSHOP-Sandbox) · [思维范式接口](https://gitee.com/sinoshop/SINOSHOP-Sandbox/tree/master/api/R21A-MIND) · [产品手册](https://gitee.com/sinoshop/SINOSHOP-Sandbox/tree/master/products)
+> 🔗 **SINOSHOP 生态导航**：[🌐 SINOPORT 官网展示页](https://sinoshop-open.github.io/webpage/) · [💻 SINOPORT 主仓库](https://gitee.com/sinoshop/SinoPORT) · [🐙 GitHub 镜像组织](https://github.com/SINOSHOP-OPEN) · [思维范式接口](https://gitee.com/sinoshop/SINOSHOP-Sandbox/tree/main/api/R21A-MIND) · [产品手册](https://gitee.com/sinoshop/SINOSHOP-Sandbox/tree/main/products)
 
 ---
 

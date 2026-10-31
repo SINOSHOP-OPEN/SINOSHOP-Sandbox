@@ -1,3 +1,33 @@
+<!-- STAR:HERO:START -->
+<div align="center">
+
+<img src="docs/assets/sandbox-concept.jpg" alt="CHALLENGE-010 Windrider · 全向气旋三维拓扑气动抬升算法 · 概念图" width="100%">
+
+<br><br>
+
+# CHALLENGE-010 · Windrider
+
+### Omnidirectional Cyclone 3D Topological Aerodynamic Lift Algorithm
+
+<br>
+
+> **观天之道，执天之行，造福人民。**　*Observe Nature's Order, Align with Ocean's Rhythm, Benefit All People.*
+> **碳基硅基共舞** —— 开源工程硬核科幻 · 与全球工程师同场解题。
+
+<br>
+
+<code>🌀 全向气旋</code> &nbsp; <code>🧊 三维拓扑</code> &nbsp; <code>🌀 气动抬升</code> &nbsp; <code>🎁 知识悬赏</code> &nbsp; 
+
+<br>
+
+### 🌐 星系导航 · STAR NAVIGATION
+
+**🌐 [SINOPORT 官网展示页](https://sinoshop-open.github.io/webpage/) ｜ 💻 [SINOPORT 主仓库](https://gitee.com/sinoshop/SinoPORT) ｜ 🐙 [GitHub 镜像组织](https://github.com/SINOSHOP-OPEN)**
+
+</div>
+
+<!-- STAR:HERO:END -->
+
 # 🏆 CHALLENGE-010: Windrider · Omnidirectional Cyclone 3D Topological Aerodynamic Lift Algorithm
 
 **USS v2.2.3d · Ultimate Defense Edition**
@@ -6,7 +36,7 @@
 
 ---
 
-🔗 **SINOSHOP Ecosystem Navigation**: [sinoshop-os Mother Platform](https://gitee.com/sinoshop/sinoshop-os) · [Paradigm Interface](https://gitee.com/sinoshop/sinoshop-os) · [Product Catalog](https://gitee.com/sinoshop/SINOSHOP-Sandbox/products) · [Getting Started Tasks](https://gitee.com/sinoshop/SINOSHOP-Sandbox)
+🔗 **SINOSHOP Ecosystem Navigation**: [🌐 SINOPORT 官网展示页](https://sinoshop-open.github.io/webpage/) · [💻 SINOPORT 主仓库](https://gitee.com/sinoshop/SinoPORT) · [🐙 GitHub 镜像组织](https://github.com/SINOSHOP-OPEN) · [sinoshop-os Mother Platform](https://gitee.com/sinoshop/sinoshop-os) · [Paradigm Interface](https://github.com/SINOSHOP-OPEN/SINOSHOP-Sandbox/tree/main/api/R21A-MIND) · [Product Catalog](https://github.com/SINOSHOP-OPEN/SINOSHOP-Sandbox/tree/main/products) · [Getting Started Tasks](https://github.com/SINOSHOP-OPEN/SINOSHOP-Sandbox/issues)
 
 📖 **"Mending the Sky" Chapter 1: Typhoon Chaos Approaches** — Open-source hard sci-fi engineering, Venturi cavitation bounty now live #IJSH0I
 
