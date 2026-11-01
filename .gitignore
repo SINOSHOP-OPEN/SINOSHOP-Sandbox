@@ -28,3 +28,8 @@ tools/*audit*internal*
 
 # pytest 本地缓存
 .pytest_cache/
+
+# 内部测试代码只留本地工作区与内部隔离区，永不入库
+tests/
+test_*.py
+conftest.py
