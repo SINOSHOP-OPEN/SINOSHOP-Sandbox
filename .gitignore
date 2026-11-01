@@ -20,3 +20,8 @@ Thumbs.db
 # Local config
 .env
 local_config.py
+
+# 保密审计脚本只留本地工作区，永不入库
+tools/final_secrecy_audit.py
+tools/*secrecy*
+tools/*audit*internal*
