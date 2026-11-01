@@ -134,7 +134,7 @@ Solutions that pass the TRL5 gate will receive:
 
 | Item | Link/Description |
 | :--- | :--- |
-| **Main Repository** | [https://github.com/SINOSHOP-OPEN/SINOSHOP-Platform](https://github.com/SINOSHOP-OPEN/SINOSHOP-Platform) |
+| **Main Repository** | [https://github.com/SINOSHOP-OPEN/SinoPORT](https://github.com/SINOSHOP-OPEN/SinoPORT) |
 | **Sandbox Simulation Platform** | [SINOSHOP-Sandbox](https://github.com/SINOSHOP-OPEN/SINOSHOP-Sandbox) — Complete simulation verification in the sandbox, then submit results to this challenge entry |
 | **Technical Specifications** | See USS v2.2.3d complete strategic documents in `/docs/` directory |
 
