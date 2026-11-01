@@ -25,3 +25,6 @@ local_config.py
 tools/final_secrecy_audit.py
 tools/*secrecy*
 tools/*audit*internal*
+
+# pytest 本地缓存
+.pytest_cache/

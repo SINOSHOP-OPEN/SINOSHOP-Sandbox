@@ -36,53 +36,71 @@ def validate(result_json_path: str) -> bool:
     checks = []
 
     # ---- 核心指标 ----
-    checks.append((
-        r.get("max_wind_speed", 0) >= 65.0,
-        f"❌ 风速不达标: {r.get('max_wind_speed')} m/s（要求 ≥ 65 m/s）"
-    ))
+    checks.append(
+        (
+            r.get("max_wind_speed", 0) >= 65.0,
+            f"❌ 风速不达标: {r.get('max_wind_speed')} m/s（要求 ≥ 65 m/s）",
+        )
+    )
 
-    checks.append((
-        r.get("wind_direction_coverage", [0, 0]) == [0, 360],
-        f"❌ 风向覆盖不完整: {r.get('wind_direction_coverage')}（要求 [0, 360]）"
-    ))
+    checks.append(
+        (
+            r.get("wind_direction_coverage", [0, 0]) == [0, 360],
+            f"❌ 风向覆盖不完整: {r.get('wind_direction_coverage')}（要求 [0, 360]）",
+        )
+    )
 
-    checks.append((
-        1.0 <= min(r.get("rotation_period_range", [0, 0])) <= 6.0
-        and 1.0 <= max(r.get("rotation_period_range", [0, 0])) <= 6.0,
-        f"❌ 旋转周期越界: {r.get('rotation_period_range')}（要求 1h-6h）"
-    ))
+    checks.append(
+        (
+            1.0 <= min(r.get("rotation_period_range", [0, 0])) <= 6.0
+            and 1.0 <= max(r.get("rotation_period_range", [0, 0])) <= 6.0,
+            f"❌ 旋转周期越界: {r.get('rotation_period_range')}（要求 1h-6h）",
+        )
+    )
 
-    checks.append((
-        r.get("passive_only", False) is True,
-        "❌ 启用了外部电能泵组（要求仅几何被动消能）"
-    ))
+    checks.append(
+        (
+            r.get("passive_only", False) is True,
+            "❌ 启用了外部电能泵组（要求仅几何被动消能）",
+        )
+    )
 
-    checks.append((
-        r.get("wind_attenuation", 0) >= 0.75,
-        f"❌ 风速衰减不足: {r.get('wind_attenuation')*100}%（要求 ≥ 75%）"
-    ))
+    checks.append(
+        (
+            r.get("wind_attenuation", 0) >= 0.75,
+            f"❌ 风速衰减不足: {r.get('wind_attenuation')*100}%（要求 ≥ 75%）",
+        )
+    )
 
-    checks.append((
-        r.get("central_quiet_zone_stable", False) is True,
-        "❌ 中心静风区未形成绝对三维稳定"
-    ))
+    checks.append(
+        (
+            r.get("central_quiet_zone_stable", False) is True,
+            "❌ 中心静风区未形成绝对三维稳定",
+        )
+    )
 
     # ---- 高频余差 ----
-    checks.append((
-        r.get("pid_residual_jitter_um", float("inf")) < 300.0,
-        f"❌ PID残余微震超标: {r.get('pid_residual_jitter_um')} μm（要求 < 300 μm）"
-    ))
+    checks.append(
+        (
+            r.get("pid_residual_jitter_um", float("inf")) < 300.0,
+            f"❌ PID残余微震超标: {r.get('pid_residual_jitter_um')} μm（要求 < 300 μm）",
+        )
+    )
 
     # ---- 黑天鹅工况 ----
-    checks.append((
-        r.get("max_tilt_angle", float("inf")) <= 3.0,
-        f"❌ 最大倾斜角超标: {r.get('max_tilt_angle')}°（要求 ≤ 3°）"
-    ))
+    checks.append(
+        (
+            r.get("max_tilt_angle", float("inf")) <= 3.0,
+            f"❌ 最大倾斜角超标: {r.get('max_tilt_angle')}°（要求 ≤ 3°）",
+        )
+    )
 
-    checks.append((
-        r.get("hash_integrity", False) is True,
-        "❌ 主权哈希存证链数据完整性不足（要求 100%）"
-    ))
+    checks.append(
+        (
+            r.get("hash_integrity", False) is True,
+            "❌ 主权哈希存证链数据完整性不足（要求 100%）",
+        )
+    )
 
     # ---- 判定 ----
     all_passed = True
