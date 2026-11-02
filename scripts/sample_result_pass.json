@@ -1,0 +1,11 @@
+{
+  "max_wind_speed": 68.5,
+  "wind_direction_coverage": [0, 360],
+  "rotation_period_range": [1.5, 5.5],
+  "passive_only": true,
+  "wind_attenuation": 0.82,
+  "central_quiet_zone_stable": true,
+  "pid_residual_jitter_um": 250.0,
+  "max_tilt_angle": 1.8,
+  "hash_integrity": true
+}

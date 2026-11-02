@@ -1,0 +1,32 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data files (large)
+*.hdf5
+*.npz
+
+# Local config
+.env
+local_config.py
+
+# 本地工作区文件不入库
+
+# pytest 本地缓存
+.pytest_cache/
+
+# 本地工作区文件不入库
+tests/
+test_*.py
+conftest.py
